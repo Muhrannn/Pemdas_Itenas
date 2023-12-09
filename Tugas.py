@@ -10,8 +10,7 @@ for index, row in df.iterrows():
 print(df)
 print()
 for index, row in df.iterrows():
-    df.at[index, 'Tambahan'] = (lambda x: 0.02 * x if row['Usia'] > 30 else 0) 
-    (row['Gaji_Bonus'])
+    df.at[index, 'Tambahan'] = (lambda x: 0.02 * x if row['Usia'] > 30 else 0) (row['Gaji_Bonus'])
     df['Gaji_Akhir'] = df['Gaji_Bonus'] + df['Tambahan']
     pd.set_option('display.max_columns', None)
 print(df)
